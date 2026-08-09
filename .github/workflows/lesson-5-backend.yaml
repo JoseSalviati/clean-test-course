@@ -12,10 +12,8 @@ jobs:
         working-directory: backend
     name: Execute the PyCharm security test
     steps:
-
-    steps:
       - uses: actions/checkout@v4
-      - name: Run Python Securtity
+      - name: Run Python Security
       - uses: tonybaloney/pycharm-security@v1.25.1
   build_and_test:
     needs: [security_test]
